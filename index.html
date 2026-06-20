@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WeatherSphere</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+
+<div class="container">
+
+<header class="navbar glass">
+
+<div class="logo">
+🌤 WeatherSphere
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="cityInput"
+placeholder="Search city..."
+>
+
+<button id="searchBtn">
+Search
+</button>
+
+</div>
+
+</header>
+
+<section class="hero glass">
+
+<div class="hero-left">
+
+<h1 id="temperature">
+--°
+</h1>
+
+<h2 id="city">
+Loading...
+</h2>
+
+<p id="condition">
+Fetching weather...
+</p>
+
+</div>
+
+<div class="hero-right">
+
+<img
+id="weatherIcon"
+src=""
+alt="weather"
+>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="glass card">
+
+<h3>Humidity</h3>
+
+<p id="humidity">
+--
+</p>
+
+</div>
+
+<div class="glass card">
+
+<h3>Wind</h3>
+
+<p id="wind">
+--
+</p>
+
+</div>
+
+<div class="glass card">
+
+<h3>Feels Like</h3>
+
+<p id="feels">
+--
+</p>
+
+</div>
+
+<div class="glass card">
+
+<h3>Pressure</h3>
+
+<p id="pressure">
+--
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+7 Day Forecast
+</h2>
+
+<div
+class="forecast-grid"
+id="forecast"
+>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Weather Map
+</h2>
+
+<div class="glass map-box">
+
+<iframe
+id="weatherMap"
+class="map-frame"
+src=""
+loading="lazy"
+></iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+WeatherSphere © 2026
+</p>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
